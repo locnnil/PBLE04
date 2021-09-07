@@ -18,6 +18,7 @@ $Ts = 2,5\ ms$
     - Min do Sinal: -3.253637
     - Max do Sinal: 4.925403
     - Range: 8.17904
+
 Cálculo do step para utilizar em bloco QUANT_f:
 $ Ts = \frac{8.17904}{2^8} = 0.0319493 $ 
 
