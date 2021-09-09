@@ -7,9 +7,9 @@
 - Amostragem:
 Frequência de amostragem escolhida: 20x maior frequência presente em m(t), logo Fs = 20x20 => Fs = 400Hz
 
-$ Ts = \frac{1}{400} $ 
+$$ Ts = \frac{1}{400} $$ 
 
-$Ts = 2,5\ ms$ 
+$$ Ts = 2,5\ ms $$ 
 
 ![Amostragem](AMOSTRAGEM_PERIODO.jpg)
 
