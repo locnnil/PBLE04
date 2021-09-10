@@ -7,9 +7,9 @@
 - Amostragem:
 Frequência de amostragem escolhida: 20x maior frequência presente em m(t), logo Fs = 20x20 => Fs = 400Hz
 
-$$ Ts = \frac{1}{400} $$ 
-
-$$ Ts = 2,5\ ms $$ 
+<img src="https://render.githubusercontent.com/render/math?math=Ts = \frac{1}{400}">
+<br /> 
+<img src="https://render.githubusercontent.com/render/math?math=Ts = 2,5\ ms">
 
 ![Amostragem](AMOSTRAGEM_PERIODO.jpg)
 
@@ -20,13 +20,12 @@ $$ Ts = 2,5\ ms $$
     - Range: 8.17904
 
 Cálculo do step para utilizar em bloco QUANT_f:
-$ Ts = \frac{8.17904}{2^8} = 0.0319493 $ 
 
 <img src="https://render.githubusercontent.com/render/math?math=Ts = \frac{8.17904}{2^8} = 0.0319493">
 
 ![Quantização](QUANTIZACAO.jpg)
 
-- Codificação:
+- Codificação: (Necessário ser feito)
 
 ###### Estado atual Codificação PCM:
 ![Atual](PCM_ATUAL.jpg)
