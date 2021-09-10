@@ -22,7 +22,7 @@ $$ Ts = 2,5\ ms $$
 Cálculo do step para utilizar em bloco QUANT_f:
 $ Ts = \frac{8.17904}{2^8} = 0.0319493 $ 
 
-<img src="https://latex.codecogs.com/gif.latex?O_t=\equation {Ts = \frac{8.17904}{2^8} = 0.0319493} " /> 
+<img src="https://latex.codecogs.com/gif.latex?Ts = \frac{8.17904}{2^8} = 0.0319493" /> 
 
 ![Quantização](QUANTIZACAO.jpg)
 
