@@ -5,11 +5,11 @@
 - Aplicar PCM (8 bits) no sinal modulante m(t) = 3cos(20πt) + 2cos(40πt + π/6) no Scilab. 
 ##### Raciocionio:
 - Amostragem:
-Frequência de amostragem escolhida: 20x maior frequência presente em m(t), logo Fs = 20x20 => Fs = 400Hz
+Frequência de amostragem escolhida: 40x maior frequência presente em m(t), logo Fs = 40x20 => Fs = 800Hz
 
-<img src="https://render.githubusercontent.com/render/math?math=Ts = \frac{1}{400}">
+<img src="https://render.githubusercontent.com/render/math?math=Ts = \frac{1}{800}">
 <br /> 
-<img src="https://render.githubusercontent.com/render/math?math=Ts = 2,5\ ms">
+<img src="https://render.githubusercontent.com/render/math?math=Ts = 1,25\ ms">
 
 ![Amostragem](AMOSTRAGEM_PERIODO.jpg)
 
