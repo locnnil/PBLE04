@@ -1,5 +1,5 @@
 fm = 20;
-fs = 20*(2*fm);
+fs = 40*fm;
 ts = 1/fs;
 t = 0:ts:(1-ts);
 m = 3*cos(20*%pi*t) + 2*cos(40*%pi*t + (%pi/6));
