@@ -19,19 +19,15 @@ Frequência de amostragem escolhida: 40x maior frequência presente em m(t), log
     - Max do Sinal: 4.925403
     - Range: 8.17904
 
-Cálculo do step para utilizar em bloco QUANT_f:
+- Cálculo do step para utilizar em quantização:
 
 <img src="https://render.githubusercontent.com/render/math?math=Ts = \frac{8.17904}{2^8} = 0.0319493">
 
-![Quantização](QUANTIZACAO.jpg)
-
-- Codificação: (Necessário ser feito)
-
-###### Estado atual Codificação PCM:
-![Atual](PCM_ATUAL.jpg)
+- Sinal codificado em variável : [C](https://drive.google.com/file/d/1t91l3TPp3G6dQTYOHrn3vV1batMW5uUj/view "Variável C")
 
 ## Etapa 2: 28/09/21 
 - Gerar o sinal PWM das amostras da etapa 1 por simulação de FPGA e no Scilab.
+
 ## Etapa 3: 05/10/21 
 - Filtrar o sinal PWM com FPB no Xcos do Scilab. Prazo: 05/10/21
 
