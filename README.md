@@ -11,8 +11,6 @@ Frequência de amostragem escolhida: 40x maior frequência presente em m(t), log
 <br /> 
 <img src="https://render.githubusercontent.com/render/math?math=Ts = 1,25\ ms">
 
-![Amostragem](AMOSTRAGEM_PERIODO.jpg)
-
 - Quantização:
     - Exigido 8 bits
     - Min do Sinal: -3.253637
