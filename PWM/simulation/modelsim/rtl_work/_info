@@ -1,0 +1,122 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/linco/Desktop/PWM/simulation/modelsim
+vamostras
+Z1 !s110 1632604935
+!i10b 1
+!s100 [al0FFGP2mLR9BoLhV]Hh0
+I[5`8h:jL?h94bQKH<A7XF3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632604516
+8C:/Users/linco/Desktop/PWM/amostras.v
+FC:/Users/linco/Desktop/PWM/amostras.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1632604935.000000
+!s107 C:/Users/linco/Desktop/PWM/amostras.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/linco/Desktop/PWM|C:/Users/linco/Desktop/PWM/amostras.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM
+Z7 tCvgOpt 0
+vcomparador
+R1
+!i10b 1
+!s100 3]8fZNZQC?QY2aZO94fEh0
+IF7MQ?FZTihm8VfRHXKBd13
+R2
+R0
+w1632604013
+8C:/Users/linco/Desktop/PWM/comparador.v
+FC:/Users/linco/Desktop/PWM/comparador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/linco/Desktop/PWM/comparador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/linco/Desktop/PWM|C:/Users/linco/Desktop/PWM/comparador.v|
+!i113 1
+R5
+R6
+R7
+vcontador
+R1
+!i10b 1
+!s100 ifldFUM]F`Y2oKJRldo`22
+InB2@ZF>UhD_GlSzaIhbT@3
+R2
+R0
+w1632603897
+8C:/Users/linco/Desktop/PWM/contador.v
+FC:/Users/linco/Desktop/PWM/contador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/linco/Desktop/PWM/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/linco/Desktop/PWM|C:/Users/linco/Desktop/PWM/contador.v|
+!i113 1
+R5
+R6
+R7
+vPWM
+R1
+!i10b 1
+!s100 ZfoOC7Do2jl7O<aH3C?WY2
+INQ3d>T5ocP?NM8a=P5VnD1
+R2
+R0
+w1632603728
+8C:/Users/linco/Desktop/PWM/PWM.v
+FC:/Users/linco/Desktop/PWM/PWM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/linco/Desktop/PWM/PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/linco/Desktop/PWM|C:/Users/linco/Desktop/PWM/PWM.v|
+!i113 1
+R5
+R6
+R7
+n@p@w@m
+vPWM_TB
+R1
+!i10b 1
+!s100 [OS[^GUNP^Ag^B^AzGQca2
+IaTL_=aZ^HMMkk@BHaW8V52
+R2
+R0
+w1632604771
+8C:/Users/linco/Desktop/PWM/PWM_TB.v
+FC:/Users/linco/Desktop/PWM/PWM_TB.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/linco/Desktop/PWM/PWM_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/linco/Desktop/PWM|C:/Users/linco/Desktop/PWM/PWM_TB.v|
+!i113 1
+R5
+R6
+R7
+n@p@w@m_@t@b

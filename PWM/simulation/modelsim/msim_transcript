@@ -1,0 +1,85 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do PWM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM {C:/Users/linco/Desktop/PWM/PWM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:15 on Sep 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/linco/Desktop/PWM" C:/Users/linco/Desktop/PWM/PWM.v 
+# -- Compiling module PWM
+# 
+# Top level modules:
+# 	PWM
+# End time: 18:22:15 on Sep 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM {C:/Users/linco/Desktop/PWM/contador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:15 on Sep 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/linco/Desktop/PWM" C:/Users/linco/Desktop/PWM/contador.v 
+# -- Compiling module contador
+# 
+# Top level modules:
+# 	contador
+# End time: 18:22:15 on Sep 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM {C:/Users/linco/Desktop/PWM/comparador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:15 on Sep 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/linco/Desktop/PWM" C:/Users/linco/Desktop/PWM/comparador.v 
+# -- Compiling module comparador
+# 
+# Top level modules:
+# 	comparador
+# End time: 18:22:15 on Sep 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM {C:/Users/linco/Desktop/PWM/amostras.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:15 on Sep 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/linco/Desktop/PWM" C:/Users/linco/Desktop/PWM/amostras.v 
+# -- Compiling module amostras
+# 
+# Top level modules:
+# 	amostras
+# End time: 18:22:15 on Sep 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/linco/Desktop/PWM {C:/Users/linco/Desktop/PWM/PWM_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:15 on Sep 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/linco/Desktop/PWM" C:/Users/linco/Desktop/PWM/PWM_TB.v 
+# -- Compiling module PWM_TB
+# 
+# Top level modules:
+# 	PWM_TB
+# End time: 18:22:15 on Sep 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  PWM_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" PWM_TB 
+# Start time: 18:22:15 on Sep 25,2021
+# Loading work.PWM_TB
+# Loading work.PWM
+# Loading work.contador
+# Loading work.amostras
+# Loading work.comparador
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: init_signal_spy [C:/Users/linco/Desktop/PWM/PWM_TB.v(24)] : Mirroring the value of '/PWM_TB/DUT/cont' onto '/PWM_TB/cont'.
+# ** Note: init_signal_spy [C:/Users/linco/Desktop/PWM/PWM_TB.v(25)] : Mirroring the value of '/PWM_TB/DUT/amostra' onto '/PWM_TB/amostra'.
+# ** Note: init_signal_spy [C:/Users/linco/Desktop/PWM/PWM_TB.v(26)] : Mirroring the value of '/PWM_TB/DUT/A' onto '/PWM_TB/A'.
+# ** Note: $stop    : C:/Users/linco/Desktop/PWM/PWM_TB.v(30)
+#    Time: 1005 ms  Iteration: 0  Instance: /PWM_TB
+# Break in Module PWM_TB at C:/Users/linco/Desktop/PWM/PWM_TB.v line 30

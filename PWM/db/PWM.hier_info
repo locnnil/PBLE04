@@ -1,0 +1,118 @@
+|PWM
+clk => clk.IN2
+saida << comparador:comp.port2
+
+
+|PWM|contador:C
+clk => A[0]~reg0.CLK
+clk => A[1]~reg0.CLK
+clk => A[2]~reg0.CLK
+clk => A[3]~reg0.CLK
+clk => A[4]~reg0.CLK
+clk => A[5]~reg0.CLK
+clk => A[6]~reg0.CLK
+clk => A[7]~reg0.CLK
+clk => A[8]~reg0.CLK
+clk => A[9]~reg0.CLK
+clk => A[10]~reg0.CLK
+clk => A[11]~reg0.CLK
+clk => A[12]~reg0.CLK
+clk => A[13]~reg0.CLK
+clk => cont[0]~reg0.CLK
+clk => cont[1]~reg0.CLK
+clk => cont[2]~reg0.CLK
+clk => cont[3]~reg0.CLK
+clk => cont[4]~reg0.CLK
+clk => cont[5]~reg0.CLK
+clk => cont[6]~reg0.CLK
+clk => cont[7]~reg0.CLK
+clk => cont[8]~reg0.CLK
+clk => cont[9]~reg0.CLK
+clk => cont[10]~reg0.CLK
+clk => cont[11]~reg0.CLK
+cont[0] <= cont[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[1] <= cont[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[2] <= cont[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[3] <= cont[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[4] <= cont[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[5] <= cont[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[6] <= cont[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[7] <= cont[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[8] <= cont[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[9] <= cont[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[10] <= cont[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cont[11] <= cont[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[4] <= A[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[5] <= A[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[6] <= A[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[7] <= A[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[8] <= A[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[9] <= A[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[10] <= A[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[11] <= A[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[12] <= A[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[13] <= A[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PWM|amostras:Amos
+clk => ~NO_FANOUT~
+A[0] => mem.RADDR
+A[1] => mem.RADDR1
+A[2] => mem.RADDR2
+A[3] => mem.RADDR3
+A[4] => mem.RADDR4
+A[5] => mem.RADDR5
+A[6] => mem.RADDR6
+A[7] => mem.RADDR7
+A[8] => mem.RADDR8
+A[9] => mem.RADDR9
+A[10] => ~NO_FANOUT~
+A[11] => ~NO_FANOUT~
+A[12] => ~NO_FANOUT~
+A[13] => ~NO_FANOUT~
+amostra[0] <= mem.DATAOUT
+amostra[1] <= mem.DATAOUT1
+amostra[2] <= mem.DATAOUT2
+amostra[3] <= mem.DATAOUT3
+amostra[4] <= mem.DATAOUT4
+amostra[5] <= mem.DATAOUT5
+amostra[6] <= mem.DATAOUT6
+amostra[7] <= mem.DATAOUT7
+amostra[8] <= <GND>
+amostra[9] <= <GND>
+amostra[10] <= <GND>
+amostra[11] <= <GND>
+
+
+|PWM|comparador:comp
+amostra[0] => LessThan0.IN12
+amostra[1] => LessThan0.IN11
+amostra[2] => LessThan0.IN10
+amostra[3] => LessThan0.IN9
+amostra[4] => LessThan0.IN8
+amostra[5] => LessThan0.IN7
+amostra[6] => LessThan0.IN6
+amostra[7] => LessThan0.IN5
+amostra[8] => LessThan0.IN4
+amostra[9] => LessThan0.IN3
+amostra[10] => LessThan0.IN2
+amostra[11] => LessThan0.IN1
+cont[0] => LessThan0.IN24
+cont[1] => LessThan0.IN23
+cont[2] => LessThan0.IN22
+cont[3] => LessThan0.IN21
+cont[4] => LessThan0.IN20
+cont[5] => LessThan0.IN19
+cont[6] => LessThan0.IN18
+cont[7] => LessThan0.IN17
+cont[8] => LessThan0.IN16
+cont[9] => LessThan0.IN15
+cont[10] => LessThan0.IN14
+cont[11] => LessThan0.IN13
+pwm <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

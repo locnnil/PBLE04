@@ -4,3 +4,10 @@ Capa_01.docx
 desktop.ini
 # Atalho
 *.lnk
+
+#Arquivos e pastas caches do quartus:
+.settings
+.classpath
+.project
+target/*
+bin/*
