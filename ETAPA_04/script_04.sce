@@ -16,7 +16,17 @@ plot2d(t1,bit),xlabel('TEMPO[s]'),ylabel('NÍVEL LÓGICO')
 
 
 
-t2 = 0:bp/100000:bp-bp/100000;
+t2 = 0:bp/100000:bp - bp/100000;
+m = [];
+for (i=1:1:length(x))
+    if(x(i)==1)
+        y=1*cos(2*%pi*10e6*t2);
+    else
+        y=0*cos(2*%pi*10e6*t2);
+    end
+    m = [m y];
+end
 
-
+t3 = 0:bp/(100000):(bp*length(x))-bp/100000;
+plot2d(t3,m); 
 
