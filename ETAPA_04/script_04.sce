@@ -66,6 +66,17 @@ for i=1:50000
     end
 end
 
+fclk = fs*550;
+tclk = 1/fclk;
+t = 0:tclk:(bp*length(x)-tclk);
+
+V =struct('time','t','values','PWM');
+
+
+
+
+
+
 
 
 
