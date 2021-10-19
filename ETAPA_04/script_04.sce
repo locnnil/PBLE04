@@ -1,4 +1,3 @@
-
 x = [1 1 0 0 1 0 1 0 1 0 1 1 0 1 0 0 ];
 bp = 1/(400*8);
 bit = [];
@@ -13,5 +12,6 @@ for n=1:1:length(x)
 end
 
 t1 = 0:bp/1000:(bp*length(x))-bp/1000;
-plot(t1,bit)
+plot2d(t1,bit),xlabel('TEMPO[s]'),ylabel('NÍVEL LÓGICO')
+
 
