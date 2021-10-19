@@ -15,3 +15,8 @@ t1 = 0:bp/1000:(bp*length(x))-bp/1000;
 plot2d(t1,bit),xlabel('TEMPO[s]'),ylabel('NÍVEL LÓGICO')
 
 
+
+t2 = 0:bp/100000:bp-bp/100000;
+
+
+
