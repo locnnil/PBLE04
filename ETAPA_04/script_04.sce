@@ -21,7 +21,7 @@ for (i=1:1:length(x))
     if(x(i)==1)
         y=1*cos(2*%pi*10e6*t2);
     else
-        y=0;
+        y=0*cos(2*%pi*10e6*t2);
     end
     m = [m y];
 end
@@ -42,14 +42,29 @@ t2 = 0:ts:bp-ts;
 m=[];
 for (i=1:1:length(x))
     if(x(i)==1)
-        y=1*cos(2*%pi*10e6*t2)
+        y=1*cos(2*%pi*10e6*t2);
     else
-        y=0;
+        y=0*cos(2*%pi*10e6*t2);
     end
     m = [m y];
 end
 
 mbin = dec2bin(m);
+
+PWM = zeros(1,25781252); //check this!!!
+
+for i=1:50000
+    for cont = 1:550
+        j = i-1;
+        aux = cont + 550*j;
+        teste = aux;
+        if(cont<m(i))
+            PWM(aux)=1;
+        else
+            PWM(aux)=0;
+        end
+    end
+end
 
 
 
