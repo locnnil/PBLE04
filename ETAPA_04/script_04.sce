@@ -15,7 +15,6 @@ t1 = 0:bp/1000:(bp*length(x))-bp/1000;
 plot2d(t1,bit),xlabel('TEMPO[s]'),ylabel('NÍVEL LÓGICO')
 
 
-
 t2 = 0:bp/100000:bp - bp/100000;
 m = [];
 for (i=1:1:length(x))
@@ -26,7 +25,10 @@ for (i=1:1:length(x))
     end
     m = [m y];
 end
-
 t3 = 0:bp/(100000):(bp*length(x))-bp/100000;
 plot2d(t3,m); 
 
+N = length(m);
+Amp = (2*abs(fft(m))/N);
+f = 0:1/(bp*length(x)):(N-1)*1/(bp*length(x));
+plot2d3(f,Amp),xlabel('FREQUENCIA[Hz]'),ylabel('AMPLITUDE')
