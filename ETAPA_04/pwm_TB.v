@@ -8,7 +8,7 @@ reg [15:0] A;
 wire saida;
 
 pwm DUT(
-.clock(clock),
+.clk(clock),
 .saida(saida) );
 
 initial begin

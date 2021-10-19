@@ -1,5 +1,5 @@
 module pwm(
-input clock,
+input clk,
 output saida);
 
 	(*keep=1*) wire[11:0] cont;
@@ -7,12 +7,12 @@ output saida);
 	(*keep=1*) wire[15:0] A;
 
 	Contador C (
-	.clk(clock),
+	.clk(clk),
 	.cont(cont),
 	.A(A));
 	
 	Amostras Amos(
-	.clk(clock),
+	.clk(clk),
 	.A(A),
 	.amostra(amostra));
 	
