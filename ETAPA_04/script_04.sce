@@ -10,7 +10,6 @@ for n=1:1:length(x)
     end
     bit = [bit se];
 end
-
 t1 = 0:bp/1000:(bp*length(x))-bp/1000;
 plot2d(t1,bit),xlabel('TEMPO[s]'),ylabel('NÍVEL LÓGICO')
 
@@ -71,13 +70,4 @@ tclk = 1/fclk;
 t = 0:tclk:(bp*length(x)-tclk);
 
 V =struct('time','t','values','PWM');
-
-
-
-
-
-
-
-
-
 
