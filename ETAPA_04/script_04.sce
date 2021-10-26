@@ -50,7 +50,7 @@ end
 
 mbin = dec2bin(m);
 
-PWM = zeros(1,25781252); //check this!!!
+PWM = zeros(1,27500000); //check this!!!
 
 for i=1:50000
     for cont = 1:550
@@ -69,5 +69,5 @@ fclk = fs*550;
 tclk = 1/fclk;
 t = 0:tclk:(bp*length(x)-tclk);
 
-V =struct('time','t','values','PWM');
+V =struct('time',t','values',PWM');
 
